@@ -27,3 +27,9 @@ func CToF(c Celsius) Fahrenheit { return Fahrenheit(c*9/5 + 32) }
 
 // FToC converte uma temperatura em Fahrenheit para Celsius
 func FToC(f Fahrenheit) Celsius { return Celsius((f - 32) * 5 / 9) }
+
+// KtoF converte uma temperatura em Kelvin para Fahrenheit
+func KtoF(k Kelvin) Fahrenheit { return Fahrenheit(32 + (k - 273) * 9/5 )}
+
+// FtoK converte uma temperatura em Fahrenheit para Kelvin
+func FtoK(f Fahrenheit) Kelvin { return Kelvin( (f - 32) * 5/9 + 273  )}
